@@ -1,0 +1,286 @@
+@media all and (max-width: 1024px) {
+.base {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+header .lg-big {
+  visibility: hidden;
+}
+header .lg-small {
+  visibility: visible;
+}
+header {
+  min-width: auto;
+  height: 60px;
+}
+header nav{
+  position: relative;
+  right: 2em;
+  margin-top: 1em;
+}
+header nav a{
+  font-size: 1em;
+}
+h1 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-size: 4em;
+}
+h2 {
+  margin-top: 2.825em;
+  margin-right: 3em;
+  font-size: 2.75em;
+}
+.icon-down-circled {
+  font-size: 4em;
+  animation: size 2s 1;
+}
+@keyframes size {
+  0% {font-size: 0;}
+  100% {font-size: 4em;}
+}
+#skills, #me, #portfolio, #contacts  {
+  min-width: auto;
+  height: 550px;
+}
+#start  {
+  min-width: auto;
+  height: 400px;
+}
+img.myphoto {
+  padding-top: 15px;
+  width: 40%;
+  margin-left: 50px;
+}
+.soft, .hard {
+  font-size: 1.6em;
+  display: block;
+  margin: 130px auto;
+}
+.hard {
+  clear: both;
+  float: left;
+  padding-left: 4em;
+}
+.soft {
+  float: right;
+  padding-right: 5em;
+}
+.htmlcss img{
+  margin-top: 3em;
+  width: 100%;
+  max-height: 500px;
+}
+#portfolio h2 {
+  font-size: 3em;
+  float: none;
+  text-align: center;
+}
+#portfolio p {
+  font-size: 2em;
+}
+footer {
+  min-width: auto;
+  height: 40px;
+  font-size: 0.8em;
+  padding-bottom: 10px;
+}
+.human img {
+  width: 80%;
+  float: left;
+}
+figure.human {
+  margin: 80px 0 0 10px;
+  width: 350px;
+}
+#contacts h2 {
+  font-size: 3em;
+}
+.icon-mail-alt {
+  font-size: 5em;
+  padding-right: 20px
+}
+.icon-facebook-squared {
+  float: left;
+  font-size: 5em;
+  margin-right: 100px;
+}
+.icon-up-circled {
+  font-size: 4em;
+}
+}
+
+@media all and (max-width: 884px) {
+#start {
+  height: 360px;
+}
+#me ,#skills, #portfolio, #contacts {
+  height: 440px;
+}
+figure.human {
+  margin: 80px 0 0 10px;
+  width: 250px;
+}
+.myphoto {
+  position: absolute;
+  opacity: 0.3;
+  width: 345px !important;
+  height: 440px;
+  padding-top: 0 !important;
+  z-index: 1;
+}
+#me span {
+  color: #fff;
+}
+#contacts h2 {
+  margin-right: 100px;
+}
+}
+
+@media all and (max-width: 768px) {
+label {
+  visibility: visible;
+  color: #fff;
+  font-size: 3em;
+  float: right;
+  padding-right: 10px;
+}
+.navbar {
+  display: none;
+  position: absolute;
+  margin: 0 auto;
+  right: 0;
+  top: 60px;
+  text-align: center;
+  font-size: 1.625em;
+  background-color: rgba(0,0,0,0.8);
+  width: 100%;
+  z-index: 2;
+}
+header nav a{
+  clear: both;
+  width: 100%;
+  padding: 15px 0;
+  border-bottom: 1px solid #9c4141;
+}
+header nav a:first-child {
+  border-top: 1px solid #9c4141;
+}
+header nav a:hover{
+  background-color: #9c4141;
+  color: #fff !important;
+  transition: all 0.8s ease;
+}
+header nav a:active{
+  background-color: #8b3030;
+}
+label:hover {
+  color: #bcbcbc;
+}
+label:active {
+  color: #9c4141;
+}
+h1 {
+  font-size: 3.625em;
+  margin-bottom: 10px;
+}
+img.myphoto {
+  padding-top: 85px;
+}
+#portfolio h2 {
+  font-size: 2.625em;
+}
+.soft li, .hard li {
+  font-size: 0.87em;
+}
+#contacts h2 {
+  font-size: 2.625em;
+}
+.icon-mail-alt, .icon-facebook-squared {
+  font-size: 4em;
+  margin: 0 auto;
+  padding: 0;
+}
+}
+
+@media all and (max-width: 700px) {
+ul.soft, ul.hard {
+  margin: 80px auto;
+  padding: 30px 0 30px 30px;
+}
+ul.soft {
+  float: left !important;
+}
+.soft li, .hard li {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+  }
+figure.human {
+  width: 200px;
+}
+#contacts h2 {
+  margin-right: 80px;
+}
+}
+
+@media all and (max-width: 624px) {
+figure.human {
+  margin-top: 0;
+}
+}
+
+@media all and (max-width: 520px) {
+ul.soft, ul.hard {
+  margin: 0 auto;
+}
+#contacts h2 {
+  font-size: 2.425em;
+}
+.icon-mail-alt, .icon-facebook-squared {
+  font-size: 3.5em;
+}
+}
+
+@media all and (max-width: 460px) {
+
+h2 {
+  margin-top: 2em;
+  margin-left: 50px !important;
+  margin-right: auto !important;
+  padding-right: 40px;
+}
+}
+
+@media all and (max-width: 420px) {
+h1 {
+  font-size: 3em;
+}
+img.myphoto {
+  margin: 0 auto;
+}
+#contacts h2 {
+  font-size: 2.2em;
+}
+}
+
+@media all and (max-width: 362px) {
+img.myphoto {
+  transform: scale(0.8);
+}
+}
+
+@media all and (max-width: 320px) {
+  #start, #me, #skills, #portfolio, #contacts, footer {
+  min-width: 320px;
+}
+
+h1 {
+  font-size: 3em;
+  padding: 0 20px;
+}
+footer {
+  font-size: 0.6em;
+}
+}
