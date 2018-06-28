@@ -351,15 +351,15 @@ div #icon_up {
 }
 
 
-.gym-link a{
+.portfolio-link a{
     color: #191919;
     text-decoration: none;
 }
 
-.gym-link a:hover{
+.portfolio-link a:hover{
     color: #535353;
 }
 
-.gym-link a:active{
+.portfolio-link a:active{
         color: #191919;
 }
