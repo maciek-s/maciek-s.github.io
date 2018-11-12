@@ -1,0 +1,100 @@
+<html lang="pl">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!--Font Awesome    -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+
+    <!--  Color mobile bar  -->
+
+    <meta name="theme-color" content="#ffa700">
+
+
+    <!-- Ikona   -->
+
+    <link rel="icon" href="photos/logoIcon-min.ico">
+
+
+    <title>404 - nie znaleziono strony</title>
+
+    <style>
+        body {
+            height: 100%;
+            background-color: #f2f2f2;
+            color: #313131;
+        }
+
+        .wraper {
+            height: 100%;
+        }
+
+        .logo-noSignal {
+            height: 8rem;
+            width: auto;
+        }
+
+
+        .blad {
+            font-size: 3rem;
+        }
+
+        .E404 {
+            font-size: 6rem;
+        }
+
+        .btn-custom {
+            color: white;
+            background-color: #ffa700;
+        }
+
+        .btn:focus,
+        .btn:active {
+            outline: none !important;
+            box-shadow: none;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <div class="wraper d-flex align-items-center">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="row">
+
+                    <div class="col-4">
+                        <img class="img-fluid logo-noSignal" alt="Brak Sygnału" src="photos/logo-noSignal-min.png">
+                    </div>
+                    <h1 class="col-8 blad"><i class="fas fa-exclamation-circle"></i> Błąd<br><span class="E404">404</span></h1>
+                </div>
+                <div class="w-100"></div>
+                <h5 class="col-12 text-center">Wygląda na to, że strona o podanym adresie nie istnieje.</h5>
+                <div class="w-100"></div>
+                <button id="goToIndex" type="button" class="btn btn-custom mt-3">Wróć do strony głównej</button>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+    <script>
+        $('#goToIndex').click(function() {
+            window.location.href = 'index.php';
+        });
+
+    </script>
+
+</body>
+
+</html>

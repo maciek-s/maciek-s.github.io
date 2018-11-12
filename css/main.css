@@ -1,0 +1,517 @@
+/*COLORS*/
+
+:root {
+    --button-active-translate: translateY(2px);
+
+    --hover-opacity: 0.6;
+
+    --primary-color: #9c4141;
+
+    --dark-gray-color: #272222;
+
+    --light-color: #FFF6F6;
+
+}
+
+::selection {
+    color: white;
+
+    background: var(--primary-color);
+
+}
+
+
+/*Main settings*/
+
+body,
+html {
+    height: 100%;
+    position: relative;
+
+    background-color: var(--dark-gray-color);
+
+    font-size: 80%;
+
+}
+
+.hide-element {
+    visibility: hidden;
+}
+
+h1 {
+    font-weight: 700;
+}
+
+section {
+    padding: 4rem 0 4rem 0 !important;
+}
+
+.minHeight {
+    min-height: 100vh !important;
+}
+
+
+#skills {
+    background-color: white;
+    color: var(--dark-gray-color);
+}
+
+#portoflio {
+    background-color: #9c4141;
+    color: white;
+}
+
+#contact {
+    background-color: white;
+    color: var(--dark-gray-color);
+    position: relative;
+}
+
+
+.hide-element {
+    visibility: hidden;
+}
+
+
+/*Paralaxa*/
+
+.paralaxa-shadow {
+    background-color: rgba(39, 34, 34, 0.70);
+    background-color: var(--dark-gray-color);
+
+    opacity: 0.9;
+
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.parallax {
+    /* The image used */
+    background-image: url("../photos/main-min.jpg");
+    /* Full height */
+    height: 100%;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*navbar logo*/
+
+.logo-full {
+    transition: all 0.3s ease-in-out;
+}
+
+.logo-full-smaller {
+    transform: scale(0.7);
+}
+
+/*Navbar*/
+
+.navbar {
+    background-color: transparent !important;
+    z-index: 9;
+    transition: all 0.3s ease-in-out;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.navbar-black {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+
+    background-color: var(--dark-gray-color) !important;
+}
+
+
+.nav-link {
+    color: white !important;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+
+    border: 1px solid transparent;
+    border-radius: 0.2rem;
+
+    transition: all 0.2s ease-in-out;
+
+    font-size: 1rem;
+
+}
+
+
+.nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+.nav-link-active:hover {
+    color: black !important;
+}
+
+/*navlink active*/
+
+.active {
+    /*    color: var(--primary-color);*/
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    border-radius: 0.2rem;
+    color: white;
+}
+
+.active:hover {
+    color: white;
+}
+
+#faButton {
+    font-size: 1.8rem;
+    color: white;
+}
+
+.navbar-toggler {
+    padding: 0;
+    transition: opacity 0.2s ease-in-out;
+
+}
+
+.navbar-toggler:active {
+    transform: var(--button-active-translate);
+}
+
+.navbar-toggler:hover {
+    opacity: var(--hover-opacity);
+}
+
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+
+
+
+/*Start text*/
+
+.homePageTitle {
+    font-family: 'Courgette', cursive;
+
+    color: #ffffff;
+    /*    background-color: rgba(255, 255, 255, 0.63);*/
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 3;
+
+    font-size: 3.8rem;
+
+}
+
+.arrowDown {
+    position: absolute;
+    left: 50%;
+    top: 93%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    color: white;
+}
+
+.arrowDown a {
+    color: white;
+    padding: 5rem 3rem 3rem 3rem;
+
+    font-size: 3.5rem;
+
+    opacity: 0.8;
+
+}
+
+.arrowDown a:hover {
+    opacity: var(--hover-opacity);
+}
+
+/*
+.section-header {
+    padding-top: 3rem;
+}
+*/
+
+/*SKILLS*/
+
+.skill-icon {
+    font-size: 5rem;
+    height: 9rem;
+    width: 9rem;
+    background-color: var(--primary-color);
+    border-radius: 100%;
+    color: white;
+}
+
+.skill-title {
+    text-transform: uppercase;
+
+}
+
+/*Portfolio*/
+
+.portfolio-square {
+    position: relative;
+    height: 19rem;
+    width: 19rem;
+
+    padding: 3rem;
+
+}
+
+.portfolio-title {
+    background-color: var(--dark-gray-color);
+    width: 19rem;
+    height: 5rem;
+    color: white;
+    border-bottom-left-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.portfolio-hidden {
+    z-index: 3;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.portfolio-hidden a:hover img {
+    opacity: var(--hover-opacity);
+}
+
+.portfolio-hidden a:active img {
+    transform: var(--button-active-translate);
+}
+
+
+.app-logo {
+    z-index: -1;
+}
+
+
+/*Contact*/
+
+.linkCV {
+    color: var(--primary-color);
+    transition: opacity 0.2s ease-in-out;
+}
+
+.linkCV:hover {
+    color: var(--primary-color);
+    opacity: var(--hover-opacity);
+    text-decoration: none;
+}
+
+#contact p,
+a {
+    font-size: 1rem;
+}
+
+.my-photo {
+    width: 12rem;
+    height: 12rem;
+    background-image: url("../photos/me-min.jpg");
+    border: 1px solid transparent;
+    border-radius: 100%;
+
+    background-position: center;
+    background-size: cover;
+}
+
+
+.emailLink {
+    background-color: var(--primary-color);
+    color: white;
+    border: 1px solid var(--primary-color);
+    border-radius: 0.2rem;
+    width: 9.5rem;
+    height: 2.5rem;
+
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.1rem;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.emailLink:hover {
+    text-decoration: none;
+    color: white;
+    opacity: 0.8;
+}
+
+.emailLink:active {
+    transform: var(--button-active-translate);
+}
+
+
+
+
+
+/*footer*/
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--dark-gray-color);
+    height: 3.5rem;
+
+    color: white;
+}
+
+.footerLink a {
+    color: white;
+    font-size: 2.2rem;
+
+    transition: all 0.2s ease-in-out;
+
+}
+
+.footerLink a:hover {
+    color: var(--primary-color);
+}
+
+.footerLink:active {
+    transform: var(--button-active-translate);
+}
+
+
+
+
+/*Queries*/
+
+@media (min-width: 576px) {
+    body,
+    html {
+
+
+        font-size: 85%;
+
+    }
+}
+
+@media (min-width: 768px) {}
+
+@media (max-width: 768px) {
+    .container {
+        min-width: 100%;
+    }
+
+    .navbar-nav:last-child {
+        padding-bottom: 1rem;
+    }
+
+}
+
+@media (min-width: 992px) {
+    body,
+    html {
+
+
+        font-size: 90%;
+
+    }
+}
+
+@media (min-width: 1200px) {
+    body,
+    html {
+
+
+        font-size: 95%;
+
+    }
+}
+
+@media (min-width: 1440px) {
+
+    body,
+    html {
+
+
+        font-size: 100%;
+
+    }
+}
+
+
+
+
+/*CSS HOVER*/
+
+/*http://ianlunn.github.io/Hover/*/
+
+/* Shutter Out Vertical */
+
+.hvr-shutter-out-vertical {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    /*    background: #e1e1e1;*/
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+
+    background-image: url("../photos/tlo.png");
+    background-image: url("../photos/tlo2.png");
+    background-image: url("../photos/tlo3.png");
+
+    background-size: cover;
+}
+
+.hvr-shutter-out-vertical:before {
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(156, 65, 65, 0.9);
+    background: rgba(0, 0, 0, 0.8);
+
+
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+
+}
+
+.hvr-shutter-out-vertical:hover,
+.hvr-shutter-out-vertical:focus,
+.hvr-shutter-out-vertical:active {
+    color: white;
+}
+
+.hvr-shutter-out-vertical:hover:before,
+.hvr-shutter-out-vertical:focus:before,
+.hvr-shutter-out-vertical:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}

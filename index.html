@@ -1,158 +1,319 @@
-<!DOCTYPE html>
-
-<html lang="en" id="top">
+<!doctype html>
+<html lang="pl">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-91250951-2"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-91250951-2');
-
-    </script>
-
-
+    <!-- Required meta tags -->
     <meta charset="utf-8">
-    <title> Portfolio | Maciej Siadkowski Front-end Developer </title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#9c4141" />
-    <meta name="description" content="Maciej Siadkowski | Freelancer Front-end Developer, Web Design Kraków. Tworzenie i projektowanie stron internetoych" />
-    <meta name="keywords" content="Maciej, Siadkowski, Maciek Siadkowski, www, portfolio, projektowanie, strony, www, kraków, front end developer, web design, tworzenie stron, html5, css, html, css3" />
-    <meta property="og:title" content="Portfolio | Maciej Siadkowski Front-end Developer">
-    <meta property="og:description" content="Maciej Siadkowski | Freelancer Front-end Developer, Web Design Kraków. Tworzenie i projektowanie stron internetoych">
-    <link rel="icon" href="images/icon_m.ico" type="image/x-icon">
-    <link href="css/styles.css" type="text/css" rel="stylesheet">
-    <link href="css/responsive.css" type="text/css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
-    <link href="css/fontello.css" type="text/css" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
-    <script type="text/javascript" src="js/scroll.js"></script>
-    <script type="text/javascript" src="js/resize.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!--Font Awesome    -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+
+    <!-- MY CSS     -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Animate CSS   -->
+    <link rel="stylesheet" href="css/animate.css">
+
+    <!--    FONTS GOOGL-->
+    <link href="https://fonts.googleapis.com/css?family=Courgette" rel="stylesheet">
+
+
+    <!--  Color mobile bar  -->
+
+    <meta name="theme-color" content="#9c4141">
+
+
+    <!-- Ikona   -->
+
+    <link rel="icon" href="photos/logo/icon_m.ico">
+
+
+    <title> Portfolio | Maciej Siadkowski</title>
+
+    <!-- Pozycjonowanie   -->
+    <meta name="description" content="Maciej Siadkowski | Freelance Android Developer" />
+    <meta name="keywords" content="Maciej, Siadkowski, Maciek Siadkowski, portfolio, freelancer, android, dev, kraków, developer, android developer, java, aplikacje, aplikacje android" />
+    <meta property="og:title" content="Portfolio | Maciej Siadkowski Freelance Android Developer">
+    <meta property="og:description" content="Maciej Siadkowski's portfolio, a Freelance Android Developer. Check out my android app portfolio">
 </head>
 
-<body>
-    <header>
-        <div class="base">
-            <div class="lg">
-                <a href="#start" class="lg-big"><img src="images/lgbig.png" alt="Maciej Siadkowski Front-end Developer"> </a>
-                <a id="lgogosmall" href="#" class="lg-small"><img src="images/lgsmall.png" alt="Maciej Siadkowski Front-end Developer"> </a>
-            </div>
-            <!--
-				<div class="icon-menu">
-					<i class="icon-menu-1"></i>
-					<i class="icon-cancel"></i>
-				</div>
-			-->
+<body data-spy="scroll" data-target="#navbar-top">
 
-            <div class="menu">
-                <input type="checkbox" id="menu-toggle">
-                <label for="menu-toggle">&#8801;</label>
+    <!--Paralaxa    -->
+    <div id="Top" class="paralaxa-shadow" data-offset="0">
+    </div>
+    <div class="parallax animated fadeInDown delay-1s"></div>
 
-                <nav class="navbar" id="navbar">
-                    <a id="link0" href="#">Start</a>
-                    <a id="link1" href="#">About Me</a>
-                    <a id="link2" href="#">Skills</a>
-                    <a id="link3" href="#">Portfolio</a>
-                    <a id="link4" href="#">Contacts</a>
-                </nav>
+    <nav id="navbar-top" class="navbar fixed-top navbar-expand-md animated fadeInDown delay-1s">
+        <!--        <a class="navbar-brand hide-element" href="#">NAVBAR</a>-->
+        <div class="container">
+
+            <div class="logo-div">
+                <a href="#Top">
+                    <div class="row d-flex align-items-end">
+                        <img class="logo-full d-none d-md-block" src="photos/logo/lgbig-min.png" alt="logo-big">
+                        <img class="logo-full d-md-none pl-2" src="photos/logo/lgsmall-min.png" alt="logo-small">
+                    </div>
+                </a>
             </div>
+
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu-center" aria-controls="menu-center" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon d-flex align-items-center justify-content-center">
+                <i id="faButton" class="fas fa-bars"></i>
+            </span>
+        </button>
+
+            <div class="collapse navbar-collapse" id="menu-center">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item text-center">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+
+                    <li class="nav-item text-center">
+                        <a class="nav-link" href="#portoflio">Portoflio</a>
+                    </li>
+
+                    <li class="nav-item text-center">
+                        <a class="nav-link" href="#contact">About &amp; Contact</a>
+                    </li>
+                </ul>
+            </div>
+
         </div>
-    </header>
+    </nav>
 
-    <section id="start">
-        <div class="base">
-            <h1><span>Hi, </span>I'm <span>Maciek</span> <br> nice to meet <span>You!</span>
-            </h1>
-            <br>
-            <div id="icon_down">
-                <a href="#"><i class="icon-down-circled"></i></a>
+    <!-- Start Text   -->
+
+    <div class="container homePageTitle text-center animated fadeIn delay-2s">
+        Hi, I'm Maciek<br>I build Android Apps
+    </div>
+
+    <div class="arrowDown animated fadeIn delay-2s d-flex justify-content-center">
+        <a href="#skills">
+            <div class="animated bounce infinite">
+                <i class="fas fa-chevron-down"></i>
             </div>
+        </a>
+    </div>
+
+    <!-- Skills   -->
+
+    <section id="skills" class="d-flex align-items-center">
+        <div class="container skills-waypoints animated">
+
+            <h1 class="section-header col text-center pb-4">Skills</h1>
+
+            <div class="row">
+
+                <div class="container col-12 col-md-6 col-lg-4 py-4">
+                    <div class="row d-flex justify-content-center">
+                        <div class="skill-icon d-flex justify-content-center align-items-center">
+                            <i class="fab fa-java"></i>
+                        </div>
+                        <div class="w-100"></div>
+                        <h3 class="skill-title">java</h3>
+                        <div class="w-100"></div>
+                        <h6>Intermediate</h6>
+                    </div>
+                </div>
+                <div class="container col-12 col-md-6 col-lg-4 py-4">
+                    <div class="row d-flex justify-content-center">
+                        <div class="skill-icon d-flex justify-content-center align-items-center">
+                            <i class="fab fa-android"></i> </div>
+                        <div class="w-100"></div>
+                        <h3 class="skill-title">android</h3>
+                        <div class="w-100"></div>
+                        <h6>Android Jetpack knowledge </h6>
+                    </div>
+                </div>
+                <div class="container col-12 col-md-6 col-lg-4 py-4">
+                    <div class="row d-flex justify-content-center">
+                        <div class="skill-icon d-flex justify-content-center align-items-center">
+                            <i class="fab fa-git"></i> </div>
+                        <div class="w-100"></div>
+                        <h3 class="skill-title">git</h3>
+                        <div class="w-100"></div>
+                        <h6>Beginner</h6>
+                    </div>
+                </div>
+
+
+
+                <div class="container col-12 col-md-6 col-lg-4 py-4">
+                    <div class="row d-flex justify-content-center">
+                        <div class="skill-icon d-flex justify-content-center align-items-center">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <div class="w-100"></div>
+                        <h3 class="skill-title">design</h3>
+                        <div class="w-100"></div>
+                        <h6>Modern design</h6>
+                    </div>
+                </div>
+                <div class="container col-12 col-md-6 col-lg-4 py-4">
+                    <div class="row d-flex justify-content-center">
+                        <div class="skill-icon d-flex justify-content-center align-items-center">
+                            <i class="fas fa-keyboard"></i> </div>
+                        <div class="w-100"></div>
+                        <h3 class="skill-title">code</h3>
+                        <div class="w-100"></div>
+                        <h6>beautiful and described code</h6>
+                    </div>
+                </div>
+                <div class="container col-12 col-md-6 col-lg-4 py-4">
+                    <div class="row d-flex justify-content-center">
+                        <div class="skill-icon d-flex justify-content-center align-items-center">
+                            <i class="fas fa-laptop-code"></i> </div>
+                        <div class="w-100"></div>
+                        <h3 class="skill-title">other</h3>
+                        <div class="w-100"></div>
+                        <h6>Languages: C/C++/HTML/PHP/SQL</h6>
+                    </div>
+                </div>
+
+            </div>
+
+
         </div>
+
     </section>
 
-    <section id="me">
-        <div class="base">
-            <h2>I'm <span>22 <br>years old</span> <br> freelance <br>web designer
-            </h2>
-            <figure>
-                <img class="myphoto" src="images/me.jpg" alt="My art photo">
-            </figure>
-        </div>
-    </section>
+    <!-- Portfolio   -->
 
-    <section id="skills">
-        <div class="base">
+    <section id="portoflio" class="d-flex align-items-center">
+        <div class="container portfolio-waypoints animated">
 
-            <!-- obraz jest przed tekstem :/
+            <h1 class="section-header col text-center pb-4">Portfolio</h1>
 
-				<figure class="htmlcss">
-					<img src="images/htmljs.png" alt="html5 css3 icon">
-				</figure>
-			-->
+            <div class="row">
+                <!--https://play.google.com/intl/en_us/badges/#badge-generator-->
+                <div class="container col-12 col-md-6 col-lg-4 py-4">
+                    <div class="row d-flex justify-content-center">
+                        <div class="portfolio-square hvr-shutter-out-vertical d-flex justify-content-center align-items-center">
+                            <img src="photos/appsIcon/youownme.png" class="app-logo img-fluid" alt="youownme" />
 
-            <ul class="hard">
-                <li>html5</li>
-                <li>css3</li>
-                <li>javascript</li>
-                <li>responsive design</li>
-                <li>seo techniques</li>
-            </ul>
-            <ul class="soft">
-                <li>creativity</li>
-                <li>teamwork</li>
-                <li>quic learning</li>
-                <li>patience</li>
-                <li>work ethic</li>
-            </ul>
-        </div>
-    </section>
+                            <div class="portfolio-hidden d-none">
+                                <a href='https://play.google.com/store/apps/details?id=youownme.app.com.youownme&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' target="_blank"><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' class="img-fluid"/></a>
+                            </div>
 
-    <section id="portfolio">
-        <div class="base">
-            <h2>Portfolio:
-            </h2>
-
-            <p class="portfolio-link"> <a target="_blank" href="http://ux.up.krakow.pl/~maciek_s12/gym">Gym Website</a></p>
-            <p class="portfolio-link"> <a target="_blank" href="http://www.pitblama.com.pl/">Photographer website</a></p>
-            <p class="portfolio-link"> <a target="_blank" href="http://ux.up.krakow.pl/~maciek_s12/portfoliopawlik/">IT Portfolio</a></p>
-            <p class="portfolio-link"> <a target="_blank" href="http://ux.up.krakow.pl/~maciek_s12/mountain_website/">Mountain conqueror</a></p>
-        </div>
-    </section>
-
-    <section id="contacts">
-        <div class="base">
-            <h2>Contact with me:
-            </h2>
-            <figure class="human">
-                <img src="images/contact.png">
-            </figure>
-            <div id="mail">
-                <a href="mailto:maciek.siadkowski@gmail.com" target="_blank"><i class="icon-mail-alt"></i></a>
-            </div>
-            <div id="fb">
-                <a href="https://www.facebook.com/maciej.siadkowski.3" target="_blank"><i class="icon-facebook-squared"></i></a>
-            </div>
-            <div id="icon_up">
-                <a href="#"><i class="icon-up-circled"></i></a>
+                        </div>
+                        <div class="w-100"></div>
+                        <h3 class="portfolio-title d-flex justify-content-center align-items-center">You own ME</h3>
+                    </div>
+                </div>
+                <div class="container col-12 col-md-6 col-lg-4 py-4">
+                    <div class="row d-flex justify-content-center">
+                        <div class="portfolio-square hvr-shutter-out-vertical d-flex justify-content-center align-items-center">
+                            <img src="photos/appsIcon/tictactoe.png" class="img-fluid" alt="tictactoe" />
+                            <div class="portfolio-hidden d-none">
+                                <a href='https://play.google.com/store/apps/details?id=com.masiad.tictactoe&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' target="_blank"><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' class="img-fluid"/></a>
+                            </div>
+                        </div>
+                        <div class="w-100"></div>
+                        <h3 class="portfolio-title d-flex justify-content-center align-items-center">Tic Tac Toe</h3>
+                    </div>
+                </div>
+                <div class="container col-12 col-md-6 col-lg-4 py-4">
+                    <div class="row d-flex justify-content-center">
+                        <div class="portfolio-square hvr-shutter-out-vertical d-flex justify-content-center align-items-center">
+                            <img src="photos/appsIcon/mathbrain.png" class="img-fluid" alt="mathbrain" />
+                            <div class="portfolio-hidden d-none">
+                                <a href='https://play.google.com/store/apps/details?id=com.masiad.mathtrainer&pcampaignid=MKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' target="_blank"><img alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' class="img-fluid"/></a> </div>
+                        </div>
+                        <div class="w-100"></div>
+                        <h3 class="portfolio-title d-flex justify-content-center align-items-center">Math Trainer</h3>
+                    </div>
+                </div>
             </div>
         </div>
+
     </section>
 
-    <footer>
-        <div class="base">
-            <p>&copy Copyright 2018 | Maciej Siadkowski personal portfolio
-            </p>
-        </div>
-    </footer>
+    <!-- Contact   -->
 
+    <section id="contact" class="d-flex align-items-center">
+        <div class="container contact-waypoints animated">
+
+            <h1 class="section-header col text-center pb-4">About &amp; Contact</h1>
+
+            <div class="row">
+
+                <div class="container col-12 py-4">
+                    <div class="row d-flex justify-content-center">
+                        <div class="my-photo mb-2">
+                        </div>
+                        <div class="w-100"></div>
+                        <h4>Maciej Siadkowski</h4>
+                        <div class="w-100"></div>
+                        <p class="text-center">I'm 22 years old<br>passionate about new technologies<br>study IT in Krakow, Poland</p>
+                        <div class="w-100"></div>
+
+                        <a class="linkCV" href="Maciej%20SiadkowskiCV.pdf" target="_blank">Download my Curriculum Vitae</a>
+
+                        <div class="w-100"></div>
+                        <br>
+                        <h4>Need an APP?</h4>
+                        <div class="w-100"></div>
+                        <a class="emailLink d-flex justify-content-center align-items-center" href="mailto:maciek.siadkowski@gmail.com">Email Me</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="container-fluid d-flex justify-content-center align-items-center">
+            <div class="row">
+                <div class="col footerLink">
+                    <a href="https://github.com/Maciek-S/" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <div class="col footerLink">
+                    <a href="https://www.facebook.com/maciej.siadkowski.3" target="_blank">
+                        <i class="fab fa-facebook-f"></i>                    
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+
+
+
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+    <!-- Smoth scrool   -->
+    <script src="js/smooth-scroll-master/smooth-scroll.polyfills.min.js"></script>
+
+    <!--    Waypoints-->
+    <script src="js/jquery.waypoints.min.js"></script>
+
+    <!-- MY Scripts     -->
+
+    <script src="js/navbar/navBarChange.js"></script>
+
+    <script src="js/navbar/navLinkActiveHover.js"></script>
+
+    <script src="js/navbar/navHamburgerButtonChange.js"></script>
+
+    <script src="js/portfolioHover.js"></script>
+
+    <script src="js/sectionHeight.js"></script>
+
+    <script src="js/smooth-scroll-master/scroolLaunch.js"></script>
+
+
+    <script src="js/animateElements.js"></script>
 </body>
 
 </html>
