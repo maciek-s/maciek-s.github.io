@@ -11,14 +11,13 @@ $('.contact-waypoints').addClass("hide-element")
 
 initWaypoints();
 
-$(window).resize(function () {
-    Waypoint.destroyAll()
-
-    offset = window.innerHeight / 3;
-
-    initWaypoints();
-});
-
+//$(window).resize(function () {
+//    Waypoint.destroyAll()
+//
+//    offset = window.innerHeight / 3;
+//
+//    initWaypoints();
+//});
 
 function initWaypoints() {
 
@@ -30,10 +29,11 @@ function initWaypoints() {
             if (direction == 'down') {
                 this.element.addClass('slideInUp');
                 this.element.removeClass('slideOutDown');
-            } else {
-                this.element.removeClass('slideInUp');
-                this.element.addClass('slideOutDown');
             }
+            //            else {
+            //                this.element.removeClass('slideInUp');
+            //                this.element.addClass('slideOutDown');
+            //            }
         },
         offset: offset
     })
@@ -47,10 +47,11 @@ function initWaypoints() {
             if (direction == 'down') {
                 this.element.addClass('zoomIn');
                 this.element.removeClass('zoomOut');
-            } else {
-                this.element.removeClass('zoomIn');
-                this.element.addClass('zoomOut');
             }
+            //            else {
+            //                this.element.removeClass('zoomIn');
+            //                this.element.addClass('zoomOut');
+            //            }
         },
         offset: offset
     })
@@ -62,12 +63,13 @@ function initWaypoints() {
             this.element.removeClass('hide-element');
 
             if (direction == 'down') {
-                this.element.addClass('jackInTheBox');
-                this.element.removeClass('rotateOut');
-            } else {
-                this.element.removeClass('jackInTheBox');
-                this.element.addClass('rotateOut');
+                this.element.addClass('bounceInDown');
+                this.element.removeClass('bounceOutDown');
             }
+            //            else {
+            //                this.element.removeClass('bounceInDown');
+            //                this.element.addClass('bounceOutDown');
+            //            }
         },
         offset: offset
     })
