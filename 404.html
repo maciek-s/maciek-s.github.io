@@ -13,12 +13,12 @@
 
     <!--  Color mobile bar  -->
 
-    <meta name="theme-color" content="#ffa700">
+    <meta name="theme-color" content="#9c4141">
 
 
     <!-- Ikona   -->
 
-    <link rel="icon" href="photos/logoIcon-min.ico">
+    <link rel="icon" href="photos/logo/icon_m.ico">
 
 
     <title>404 - nie znaleziono strony</title>
@@ -26,17 +26,18 @@
     <style>
         body {
             height: 100%;
-            background-color: #f2f2f2;
-            color: #313131;
+            background-color: #272222;
+            color: white;
         }
 
         .wraper {
             height: 100%;
         }
 
-        .logo-noSignal {
-            height: 8rem;
-            width: auto;
+        .logo {
+            position: absolute;
+            left: 0;
+            top: 0;
         }
 
 
@@ -50,7 +51,7 @@
 
         .btn-custom {
             color: white;
-            background-color: #ffa700;
+            background-color: #9c4141;
         }
 
         .btn:focus,
@@ -64,20 +65,22 @@
 </head>
 
 <body>
+
+
+
     <div class="wraper d-flex align-items-center">
+        <div class="col logo pt-2 pl-2">
+            <img class="img-fluid" alt="log Macieko" src="photos/logo/lgbig-min.png">
+        </div>
         <div class="container">
             <div class="row justify-content-center">
                 <div class="row">
-
-                    <div class="col-4">
-                        <img class="img-fluid logo-noSignal" alt="Brak Sygnału" src="photos/logo-noSignal-min.png">
-                    </div>
-                    <h1 class="col-8 blad"><i class="fas fa-exclamation-circle"></i> Błąd<br><span class="E404">404</span></h1>
+                    <h1 class="col-12 blad"><i class="fas fa-exclamation-circle"></i> Error<br><span class="E404">404</span></h1>
                 </div>
                 <div class="w-100"></div>
-                <h5 class="col-12 text-center">Wygląda na to, że strona o podanym adresie nie istnieje.</h5>
+                <h3 class="col-12 text-center">Page not found</h3>
                 <div class="w-100"></div>
-                <button id="goToIndex" type="button" class="btn btn-custom mt-3">Wróć do strony głównej</button>
+                <button id="goToIndex" type="button" class="btn btn-custom mt-3">Back to main site</button>
             </div>
         </div>
     </div>
@@ -90,7 +93,7 @@
 
     <script>
         $('#goToIndex').click(function() {
-            window.location.href = 'index.php';
+            window.location.href = 'index.html';
         });
 
     </script>
